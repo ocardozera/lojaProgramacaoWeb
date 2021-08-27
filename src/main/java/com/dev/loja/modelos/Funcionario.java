@@ -25,7 +25,7 @@ public class Funcionario implements Serializable {
     private Date dataSaida;
     private String cargo;
     @ManyToOne
-//    private Cidade cidade;
+    private Cidade cidade;
     private String logradouro;
     private String numero;
     private String complemento;
@@ -145,5 +145,13 @@ public class Funcionario implements Serializable {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public Cidade getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
     }
 }
